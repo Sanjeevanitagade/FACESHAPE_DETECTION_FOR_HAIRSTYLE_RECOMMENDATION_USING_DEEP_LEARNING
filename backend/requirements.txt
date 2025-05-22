@@ -1,0 +1,10 @@
+Flask
+tensorflow==2.18.0
+opencv-python
+dlib
+Pillow
+scikit-learn
+numpy
+flask-cors
+keras_vggface
+protobuf==3.20.3
