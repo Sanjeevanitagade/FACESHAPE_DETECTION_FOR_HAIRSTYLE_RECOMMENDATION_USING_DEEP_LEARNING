@@ -1,0 +1,364 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Arial', sans-serif;
+    background-color: #f0f0f0;
+    color: #333;
+}
+.app-container {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    overflow-x: hidden;
+}
+.header {
+    background-color: #111111;
+    padding: 20px 30px;
+    color: #ffffff;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+.nav-links {
+    display: flex;
+    gap: 30px;
+}
+.nav-links a {
+    text-decoration: none;
+    color: #ffffff;
+    font-size: 1.1rem;
+}
+.nav-links a:hover {
+    text-decoration: underline;
+}
+.hero {
+    position: relative;
+    height: 600px;
+    overflow: hidden;
+    background-image: url('C:\Users\sanji\OneDrive\Desktop\Project-faceshape\frontend\src\back1.jpeg'); /* Replace with your actual image path */
+    background-size: cover; /* Ensures the image covers the entire hero section */
+    background-position: center; /* Centers the image within the hero section */
+    background-repeat: no-repeat; /* Ensures the image does not repeat */
+}
+.slider-container {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    position: relative;
+}
+.slider {
+    height: 100%;
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+}
+.slide {
+    width: 100%;
+    height: 100%;
+    flex-shrink: 0;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(0,0,0,0.4);
+    background-blend-mode: overlay;
+}
+.slide-content {
+    text-align: center;
+    color: white;
+    padding: 20px;
+    max-width: 700px;
+}
+.slide-content h1 {
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+}
+.slide-content p {
+    font-size: 1.2rem;
+    line-height: 1.6;
+    margin-bottom: 20px;
+}
+.prev-button,
+.next-button {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background: transparent;
+    border: none;
+    color: white;
+    font-size: 2rem;
+    cursor: pointer;
+    padding: 10px;
+    z-index: 10;
+}
+.prev-button {
+    left: 10px;
+}
+.next-button {
+    right: 10px;
+}
+.services {
+    padding: 50px;
+    background-color: #ffffff;
+    text-align: center;
+    max-width: 1500px;
+    margin: 0 auto;
+    margin-bottom: 20px;
+}
+.service-cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+    margin-top: 30px;
+}
+.service-card {
+    background-color: #275252;
+    padding: 20px;
+    border-radius: 8px;
+    text-align: left;
+    width: 300px;
+}
+.service-card h3 {
+    margin-bottom: 20px;
+    color: #f9fafb;
+    font-size: 1.8rem;
+
+}
+.service-card p {
+    line-height: 1.6;
+    color: #f1f8f8;
+}
+.contact-link {
+    display: inline-block;
+    margin-top: 10px;
+    color: #f5f7f9;
+    text-decoration: none;
+    font-weight: bold;
+}
+.contact-link:hover {
+    text-decoration: underline;
+}
+.testimonials {
+    background-color: #ffffff;
+    padding: 50px;
+    text-align: center;
+    max-width: 1500px;
+    margin: 0 auto;
+    margin-bottom: 20px;
+}
+.testimonial-cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    margin-top: 30px;
+}
+.testimonial-card {
+    background-color: #f9f9f9;
+    padding: 20px;
+    border-radius: 8px;
+    width: 300px;
+    text-align: left;
+}
+.testimonial-avatar {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    margin-bottom: 10px;
+}
+.testimonial-name {
+    font-weight: bold;
+    margin-bottom: 5px;
+    color: #333;
+}
+.testimonial-text {
+    font-style: italic;
+    line-height: 1.5;
+    color: #666;
+}
+.contact {
+    background-color: #111111;
+    padding: 50px 0;
+    color: #ffffff;
+    text-align: center;
+}
+.contact-content {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 30px;
+}
+.contact-info {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+    margin: 30px 0;
+}
+.contact-item {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+.contact-item img {
+    width: 30px;
+    height: 30px;
+}
+.contact-details h4 {
+    margin-bottom: 0;
+    font-size: 1.1rem;
+    color: #ffffff;
+}
+.contact-details p {
+    font-size: 0.9rem;
+    color: #e0e0e0;
+    margin: 0;
+}
+.subscribe-area {
+    margin-top: 30px;
+    text-align: center;
+}
+.subscribe-form {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-top: 15px;
+}
+.subscribe-form input[type="email"] {
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #444444;
+    background-color: #333;
+    color: #ffffff;
+}
+.subscribe-form button {
+    padding: 10px 20px;
+    border-radius: 5px;
+    background-color: #007bff;
+    color: #ffffff;
+    border: none;
+    cursor: pointer;
+}
+.copyright {
+    margin-top: 30px;
+    font-size: 0.9rem;
+    color: #e0e0e0;
+}
+.upload-form form {
+    margin-bottom: 20px;
+    text-align: center;
+}
+.upload-label {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+}
+.detect-button {
+    padding: 10px 20px;
+    background-color: #4caf50;
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    margin-top: 10px;
+}
+.result-display {
+    margin: 20px;
+    text-align: center;
+}
+.image-container {
+    margin: 20px 0;
+    overflow: hidden;
+    border-radius: 8px;
+    text-align: center;
+}
+.recommendation-list {
+    margin-top: 20px;
+    text-align: center;
+}
+.recommendations {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+.recommendation-card {
+    background: #f9f9f9;
+    padding: 15px;
+    border-radius: 8px;
+    text-align: center;
+}
+.recommendation-card img {
+    max-width: 200px;
+    margin: 10px 0;
+    border-radius: 5px;
+}
+.error-message {
+    color: red;
+    margin-top: 10px;
+}
+.hair-controls{
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin-top: 20px;
+    align-items: center;
+}
+.size-button{
+    padding: 10px;
+    background-color: #e0e0e0;
+    border: none;
+    cursor: pointer;
+    margin: 0 5px;
+    border-radius: 5px;
+}
+.size-button:hover{
+    background-color: #d0d0d0;
+}
+.try-on-content {
+    display: flex;
+    flex-wrap: wrap;
+     justify-content: center;
+     align-items: flex-start;
+    padding: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+    gap: 20px;
+}
+.hairstyle-previews {
+  display: flex;
+    flex-direction: column;
+    gap: 10px;
+    overflow-y: auto;
+    max-height: 400px; /* Adjust as needed */
+     padding: 10px;
+    border: 1px solid #e0e0e0;
+    border-radius: 8px;
+}
+.hairstyle-preview{
+  display: flex;
+  align-items: center;
+   padding: 10px;
+    border: 1px solid transparent; /* For hover effect */
+   cursor: pointer;
+   border-radius: 5px;
+}
+.hairstyle-preview:hover{
+    background-color: #f0f0f0;
+  border-color: #ccc;
+}
+.hairstyle-preview.selected {
+    background-color: #d0d0d0;
+}
+.hairstyle-preview img{
+  margin-right: 10px;
+}
